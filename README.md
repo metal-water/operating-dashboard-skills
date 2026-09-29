@@ -2,6 +2,31 @@
 
 这个包为结构相近的月度经营材料提供稳定的生成和独立核对流程。使用者通过自然语言提出变化，不必手填字段配置。配置由代理在阅读当期文档后生成，连同来源证据保留在本次输出目录。
 
+[使用与交接](TEAM_HANDOFF.md) · [复制 Prompt](PROMPTS.md) · [完整演示图与脱敏说明](docs/showcase/README.md)
+
+## 看板演示 · 已脱敏
+
+V41 视觉参考：公司指标卡、门店汇总、两层明细与实际/累计双行展示。金额、比率、名称、业务状态和报告期间已用不透明像素覆盖；下图为静态预览。
+
+![V41 公司与门店总览，数据已脱敏](docs/showcase/v41-overview-redacted.png)
+
+<details>
+<summary>展开查看 V41 第二层：项目明细</summary>
+
+![V41 项目明细，数据已脱敏](docs/showcase/v41-detail-redacted.png)
+
+</details>
+
+### 输入材料示例 · 已脱敏
+
+以下三图依据已授权线上文档的关键表格截图制作。为清除文档水印中的身份信息，按原表字段与排布重绘脱敏示意；仅保留通用表头，不公开原始数据。点击图片可放大。
+
+| 公司指标 | 门店汇总 | 项目明细 |
+| --- | --- | --- |
+| [![公司指标示例](docs/showcase/source-company-redacted.png)](docs/showcase/source-company-redacted.png) | [![门店汇总示例](docs/showcase/source-stores-redacted.png)](docs/showcase/source-stores-redacted.png) | [![项目明细示例](docs/showcase/source-projects-redacted.png)](docs/showcase/source-projects-redacted.png) |
+
+源表示例与 V41 分别展示输入结构和视觉参考，并非同一期数据的对应验证。可运行的实例数据仍使用 [完全虚构的示例](examples/synthetic-report.json)；运行 `npm run demo` 可生成交互式 HTML。
+
 ## 使用
 
 第一次交接给同事，请先看 [同事使用与交接指南](TEAM_HANDOFF.md)，再从 [PROMPTS.md](PROMPTS.md) 复制当期调用文本。
@@ -76,7 +101,7 @@ npm run test:ui
 
 ## 分享到 GitHub
 
-本仓库只包含代码、模板、虚构示例和测试。`outputs/`、`private/`、登录信息和真实源文档快照留在各使用者本地；`.gitignore` 已排除默认运行目录。网页手动上传不会替你应用本地忽略规则，上传前仍需确认文件范围。
+本仓库包含代码、模板、虚构示例、测试和经过脱敏的静态演示图。`outputs/`、`private/`、登录信息、未脱敏截图及真实源文档快照留在各使用者本地；`.gitignore` 已排除默认运行目录。网页手动上传不会替你应用本地忽略规则，上传前仍需确认文件范围。
 
 团队可以克隆仓库后在仓库内调用两个 Skill。需要面向多个项目或其他支持的宿主统一安装时，再按官方插件规范包装；本包未冒充已安装插件。
 
