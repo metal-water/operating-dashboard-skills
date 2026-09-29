@@ -1,0 +1,4 @@
+interface:
+  display_name: "经营看板生成与改版"
+  short_description: "从月度经营总表和门店分表自动配对字段，生成可追溯的两层投屏看板"
+  default_prompt: "使用 $operating-dashboard-workflow，根据本期经营文档逐店识别源可见行列与完整字段，独立配对主副值和图标，沿用 V41 默认模板生成版本化看板及 handoff.json，并验证展示与覆盖缺口。"

@@ -1,0 +1,8 @@
+node_modules/
+outputs/
+private/
+*.local.json
+*.log
+.env
+.env.*
+!examples/*.json

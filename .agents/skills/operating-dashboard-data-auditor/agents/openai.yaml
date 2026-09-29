@@ -1,0 +1,4 @@
+interface:
+  display_name: "经营看板独立数据核对"
+  short_description: "独立重读经营总表和各店分表，检查字段对应、主副值与来源覆盖率"
+  default_prompt: "使用 $operating-dashboard-data-auditor，读取 handoff.json 并独立重读同版本源表，核对所有店的字段、主副值、隐藏行列、图标与颜色，输出差异、来源、分维度覆盖率和无法确认项；核对阶段不修改看板。"

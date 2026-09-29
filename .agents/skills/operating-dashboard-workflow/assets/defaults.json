@@ -1,0 +1,13 @@
+{
+  "fontFamily": "Microsoft YaHei, Segoe UI, Arial, sans-serif",
+  "kpiTitleSize": 15,
+  "kpiValueSize": 23,
+  "kpiMetaSize": 12,
+  "tableMainSize": 17,
+  "tableSecondarySize": 14,
+  "metricHeaderSize": 14,
+  "nameWidth": 170,
+  "statusWidth": 100,
+  "metricWidth": 108,
+  "overviewHeightOffset": 35
+}

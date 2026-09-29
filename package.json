@@ -1,0 +1,17 @@
+{
+  "name": "operating-dashboard-skills",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Portable skills for source-grounded operating dashboards and independent audits",
+  "scripts": {
+    "demo": "node .agents/skills/operating-dashboard-workflow/scripts/build.cjs --input examples/synthetic-report.json --out outputs",
+    "test": "node tests/contracts.cjs",
+    "test:ui": "node tests/browser.cjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "playwright": "^1.55.0"
+  }
+}
