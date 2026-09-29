@@ -1,5 +1,7 @@
 # 经营看板 Skills
 
+**[▶ 打开 V41 在线交互演示](https://metal-water.github.io/operating-dashboard-skills/)** — 无需安装或登录，直接分享这个链接即可体验面板。
+
 这个包为结构相近的月度经营材料提供稳定的生成和独立核对流程。使用者通过自然语言提出变化，不必手填字段配置。配置由代理在阅读当期文档后生成，连同来源证据保留在本次输出目录。
 
 [使用与交接](TEAM_HANDOFF.md) · [复制 Prompt](PROMPTS.md) · [完整演示图与脱敏说明](docs/showcase/README.md)
@@ -8,7 +10,9 @@
 
 V41 视觉参考：公司指标卡、门店汇总、两层明细与实际/累计双行展示。金额、比率、名称、业务状态和报告期间已用不透明像素覆盖；下图为静态预览。
 
-![V41 公司与门店总览，数据已脱敏](docs/showcase/v41-overview-redacted.png)
+[![V41 公司与门店总览，点击进入在线演示](docs/showcase/v41-overview-redacted.png)](https://metal-water.github.io/operating-dashboard-skills/)
+
+在线演示沿用 V41 的字体、商务渐变和两层表格交互，支持展开门店、项目下钻、字段切换、备注与排期查看。公开文件只使用匿名虚构行，经营数值已移除；马赛克后没有真实数据。演示页面位于 `docs/index.html`，由 GitHub Pages 发布，和 Skill 的实际生成流程分开维护。
 
 <details>
 <summary>展开查看 V41 第二层：项目明细</summary>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="V41 经营看板公开交互演示：指标卡、门店展开、项目下钻和排期展示。经营数值已移除，名称与状态均为虚构示例。">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta property="og:title" content="V41 经营看板 · 脱敏交互演示">
+  <meta property="og:description" content="可直接体验的经营看板：四大指标、两层表格、项目展开与排期。原始经营数据已移除。">
+  <title>V41 经营看板 · 脱敏交互演示</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232573e8'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-size='38' fill='white'%3E经%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="demo.css">
+  <link rel="stylesheet" href="demo-public.css">
+  <script src="demo.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand demo-brand" href="#overview" aria-label="返回公司与门店总览"><div class="mark">经</div><div><h1>月度经营看板 <span class="demo-version">V41</span></h1><p>经营结果 · 产品排期 · 项目下钻</p></div></a>
+    <div class="actions">
+      <span class="demo-public-tag">公开脱敏演示</span>
+      <button id="copy-link" class="secondary" type="button">复制分享链接</button>
+      <a class="secondary demo-repo" href="https://github.com/metal-water/operating-dashboard-skills" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </header>
+  <main>
+    <div class="demo-notice"><span>经营数值已移除，用马赛克占位；名称、状态与分组均为虚构示例。</span><a href="#schedule" id="schedule-link">查看排期演示 ↓</a></div>
+    <div class="page-head"><div class="page-title" id="pageTitle"></div><div class="crumb" id="crumb"></div></div>
+    <section class="kpis" id="kpis" aria-label="四大经营指标"></section>
+    <div id="content"></div>
+    <footer class="demo-footer">V41 视觉与交互演示 · 不含原始经营数据 <a href="https://github.com/metal-water/operating-dashboard-skills/blob/main/TEAM_HANDOFF.md" target="_blank" rel="noopener noreferrer">查看 Skill 使用指南</a></footer>
+  </main>
+  <div id="toast" role="status" aria-live="polite" class="demo-toast" hidden></div>
+  <noscript><p class="demo-noscript">此交互演示需要启用 JavaScript。网页不包含真实经营数据。</p></noscript>
+</body>
+</html>

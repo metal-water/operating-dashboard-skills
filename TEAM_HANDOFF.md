@@ -2,6 +2,8 @@
 
 当前 Skill 版本：**0.2.0**。这是一个包含“生成看板”和“独立核对”两个 Skill 的项目。
 
+只展示面板时，发送这个链接即可：[V41 在线交互演示](https://metal-water.github.io/operating-dashboard-skills/)。对方无需 GitHub 账号或安装软件；演示不含真实经营数据。要用 Skill 处理自己的材料，再按下面的步骤下载仓库。
+
 可先看 [脱敏演示图](docs/showcase/README.md) 了解源表结构和 V41 的展示样式。公开图仅供展示；运行示例使用仓库内的完全虚构数据。
 
 ## 第一次使用：下载后在 Codex 中打开
